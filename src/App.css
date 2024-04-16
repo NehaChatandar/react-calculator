@@ -1,3 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #98c4ed;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +49,64 @@
   to {
     transform: rotate(360deg);
   }
+}
+h1 {
+  text-align: center; /* Center align the text */
+  color: #1d2157; /* Set the text color */
+  font-size: 2.5em; /* Set the font size */
+  margin-bottom: 30px; /* Add some bottom margin for spacing */
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 10px;
+  max-width: 400px;
+  background-color: #200E3A;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+}
+
+.display {
+  grid-column: span 4; /* Make display span all 4 columns */
+  text-align: left;
+  padding: 15px;
+  background-color: #52D3D8;
+  font-size: 1.8em;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px;
+  font-size: 1.8em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #38419D;
+  color: white;
+}
+
+button.operator {
+  background-color: #e74c3c;
+}
+
+button.equal {
+  grid-column: span 2; 
+  background-color: #3887BE;
+}
+
+button:hover {
+  background-color: #7f8088;
+  color:black;
+}
+
+.display-result {
+  grid-column: span 4; 
+  padding: 10px;
+  font-size: 1.9em;
+  color: #fff; 
+  font-weight: bold; 
+  margin: 0 auto; 
 }
